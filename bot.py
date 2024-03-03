@@ -40,19 +40,14 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Hi `{event.sender.first_name}`!\n\nI am a channel auto-post bot!! Read /help to know more!\n\nI can be used in only two channels (one user) at a time. Kindly deploy your own bot.\n\n[More bots](https://t.me/its_xditya)..",
-        buttons=[
-            Button.url("Repo", url="https://github.com/xditya/ChannelAutoForwarder"),
-            Button.url("Dev", url="https://xditya.me"),
-        ],
-        link_preview=False,
-    )
+        f"Hey {event.sender.first_name} \n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒-𝐁, the Shadow Keeper Powered by @Animeke14hai and My job is to scan our posts, rewrite them, and make a backup of it....")
+       
 
 
-@datgbot.on(events.NewMessage(pattern="/help"))
+@datgbot.on(events.NewMessage(pattern="/about"))
 async def helpp(event):
     await event.reply(
-        "**Help**\n\nThis bot will send all new posts in one channel to the other channel. (without forwarded tag)!\nIt can be used only in two channels at a time, so kindly deploy your own bot from [here](https://github.com/xditya/ChannelAutoForwarder).\n\nAdd me to both the channels and make me an admin in both, and all new messages would be autoposted on the linked channel!!\n\nLiked the bot? Drop a ♥ to @xditya_Bot :)"
+        "<b>○ Creator : 𝘈𝘑\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a></b>"
     )
 
 
