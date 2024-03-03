@@ -40,16 +40,8 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Hey {event.sender.first_name} \n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒-𝐁, the Shadow Keeper Powered by @Animeke14hai and My job is to scan our posts, rewrite them, and make a backup of it....")
+        f"Hey {event.sender.first_name} \n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒-𝐁, \n\nThe Shadow Keeper Powered by @Animeke14hai and My job is to scan our posts, rewrite them, and make a backup of it....\n\nCreated by 𝘈𝘑")
        
-
-
-@datgbot.on(events.NewMessage(pattern="/about"))
-async def helpp(event):
-    await event.reply(
-        "<b>○ Creator : 𝘈𝘑\n○ Language : <code>Python3</code>\n○ Library : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio {__version__}</a></b>"
-    )
-
 
 @datgbot.on(events.NewMessage(incoming=True, chats=frm))
 async def _(event):
