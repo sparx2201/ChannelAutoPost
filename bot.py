@@ -40,8 +40,7 @@ except Exception as exc:
 @datgbot.on(events.NewMessage(pattern="/start"))
 async def _(event):
     await event.reply(
-        f"Hey {event.sender.first_name} \n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒-𝐁,
-        The Shadow Keeper Powered by @Animeke14hai and My job is to scan our posts, rewrite them, and make a backup of it...\n\nCreated by 𝘈𝘑")
+        f"Hey {event.sender.first_name} \n\nI am 𝐂𝐨𝐝𝐞-𝐀𝟏𝟒-𝐁, \nThe Shadow Keeper Powered by @Animeke14hai and My job is to scan our posts, rewrite them, and make a backup of it...\n\nCreated by 𝘈𝘑")
        
 
 @datgbot.on(events.NewMessage(incoming=True, chats=frm))
